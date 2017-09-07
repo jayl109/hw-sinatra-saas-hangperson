@@ -4,7 +4,7 @@ Feature: guess correct letter
   So that I can make progress toward the goal
   I want to see when my guess is correct
 
-Scenario: guess correct letter that occurs once
+Scenario: guess correct letter that occurs oncucumber features/start_new_game.featurece
 
   Given I start a new game with word "garply"
   When I guess "r"

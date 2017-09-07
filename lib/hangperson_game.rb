@@ -22,13 +22,14 @@ class HangpersonGame
     if letter == nil
       raise ArgumentError
     end
+      
     letter = letter.downcase
     if letter.match(/[A-Za-z]/) == nil 
+      @valid = false
       raise ArgumentError
     end
     if @guesses.match(letter) != nil || @wrong_guesses.match(letter) != nil
-      
-      @valid = false 
+      @valid = false
       return false
     end
     if @word.match(letter)!= nil
